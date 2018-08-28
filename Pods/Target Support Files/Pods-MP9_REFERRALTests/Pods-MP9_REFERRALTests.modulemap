@@ -1,0 +1,6 @@
+framework module Pods_MP9_REFERRALTests {
+  umbrella header "Pods-MP9_REFERRALTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

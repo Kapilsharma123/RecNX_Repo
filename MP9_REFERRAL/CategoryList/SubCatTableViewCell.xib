@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="SubCatTableViewCell" customModule="RECNX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Um9-7o-8qW">
+                        <rect key="frame" x="20" y="10" width="280" height="53.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelefhewhfbcdbdhvhddhvvhjdhjdhfuvbhjdhsbdvhjEND" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6n-D9-9ZS">
+                                <rect key="frame" x="10" y="0.0" width="220.5" height="53.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_checked_3x" translatesAutoresizingMaskIntoConstraints="NO" id="Gbr-ML-ZHO">
+                                <rect key="frame" x="240.5" y="12" width="29.5" height="29.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gbr-ML-ZHO" secondAttribute="height" multiplier="1:1" id="nc0-Dg-SWy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26666666666666666" green="0.31764705882352939" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Gbr-ML-ZHO" secondAttribute="trailing" constant="10" id="2U6-q7-exO"/>
+                            <constraint firstAttribute="bottom" secondItem="Gbr-ML-ZHO" secondAttribute="bottom" constant="12" id="Bhv-bI-6Zp"/>
+                            <constraint firstItem="R6n-D9-9ZS" firstAttribute="leading" secondItem="Um9-7o-8qW" secondAttribute="leading" constant="10" id="CPj-Qq-nXN"/>
+                            <constraint firstItem="R6n-D9-9ZS" firstAttribute="top" secondItem="Um9-7o-8qW" secondAttribute="top" id="IQj-pq-cZG"/>
+                            <constraint firstAttribute="bottom" secondItem="R6n-D9-9ZS" secondAttribute="bottom" id="N3h-Bb-qxA"/>
+                            <constraint firstItem="Gbr-ML-ZHO" firstAttribute="top" secondItem="Um9-7o-8qW" secondAttribute="top" constant="12" id="jqN-lz-Bpe"/>
+                            <constraint firstItem="Gbr-ML-ZHO" firstAttribute="leading" secondItem="R6n-D9-9ZS" secondAttribute="trailing" constant="10" id="xzR-rS-GJy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Um9-7o-8qW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="CYG-Pw-C4E"/>
+                    <constraint firstAttribute="bottom" secondItem="Um9-7o-8qW" secondAttribute="bottom" constant="10" id="IPK-1e-Y2R"/>
+                    <constraint firstAttribute="trailing" secondItem="Um9-7o-8qW" secondAttribute="trailing" constant="20" id="PjJ-5R-2OF"/>
+                    <constraint firstItem="Um9-7o-8qW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="b5k-uC-zOe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgCheckBox" destination="Gbr-ML-ZHO" id="eiZ-HN-gtH"/>
+                <outlet property="labelSubCatName" destination="R6n-D9-9ZS" id="Mho-fZ-Vtz"/>
+                <outlet property="viewINsideCell" destination="Um9-7o-8qW" id="4KA-35-h7e"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox_checked_3x" width="66" height="66"/>
+    </resources>
+</document>
